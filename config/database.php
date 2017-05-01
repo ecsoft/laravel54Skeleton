@@ -97,9 +97,9 @@ return [
         'client' => 'predis',
 
         'default' => [
-            'host' => env('REDIS_HOST', '127.0.0.1'),
+            'host' => env('REDIS_HOST', 'http://redis-10794.c9.us-east-1-2.ec2.cloud.redislabs.com:10794'),
             'password' => env('REDIS_PASSWORD', null),
-            'port' => env('REDIS_PORT', 6379),
+            'port' => env('REDIS_PORT', 10794),
             'database' => 0,
         ],
 
