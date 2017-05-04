@@ -19,3 +19,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
+Route::group(['namespace'=>'Admin','prefix'=>'admin'],function (){
+    Route::get('/roles','RoleController@index');
+    Route::get('/create/role','RoleController@create');
+    Route::post('/roles','RoleController@store')->name('roles');
+});
